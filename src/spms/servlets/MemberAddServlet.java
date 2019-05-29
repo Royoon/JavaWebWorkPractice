@@ -37,7 +37,7 @@ public class MemberAddServlet extends HttpServlet {
 	protected void doPost(
 			HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8"); // 이것이 getParameter를 사전에 변환하는 과정.
+		//request.setCharacterEncoding("UTF-8"); // 이것이 getParameter를 사전에 변환하는 과정.
 		// 다만 GET 요청으로 데이터를 URL을 통해 보내면 여전히 한글이 깨지는데 이는 이 메소드로는 해결이 안된다.
 		// 이는 톰캣 서버의 server.xml에서 <Connector connectionTimeout= ~~~ > 절을 찾아 URIEncoding="UTF-8"/>을 추가해주어야 한다.
 		Connection conn = null;

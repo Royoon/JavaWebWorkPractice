@@ -64,7 +64,20 @@
 		<servlet-name>MemberDeleteServlet</servlet-name>
 		<url-pattern>/member/delete</url-pattern>
 	</servlet-mapping>
-
+	
+	<!-- 필터 선언 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>filters.CharacterEncodingFilter</filter-class>
+	</filter>
+	
+	<!-- 필터 url 매핑 -->
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
