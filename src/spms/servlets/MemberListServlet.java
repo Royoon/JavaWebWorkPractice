@@ -23,6 +23,7 @@ public class MemberListServlet extends HttpServlet {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try {
+			//aaa
 			//******** 1. 사용할 JDBC 드라이버를 등록하라. ********
 			//ServletConfig config = this.getServletConfig(); 
 			// DD파일에 저장되어 있는 DBMS 정보를 꺼내오기 위해  ServletConfig 객체를 사용해야 한다.
