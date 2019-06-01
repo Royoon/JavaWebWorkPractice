@@ -20,7 +20,7 @@
 	</context-param>
 	<context-param>
 		<param-name>password</param-name>
-		<param-value>dbsghdwns!72816</param-value>
+		<param-value>javawebprogramming!23</param-value>
 	</context-param>
 	
 	<!-- 서블릿 선언 -->
